@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Template</title>
+	<link rel="stylesheet" type="text/css" href="./template.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+	<div id="header">
+		<div class="container">
+			<ul class="menu-left">
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">SHOP</a></li>
+				<li><a href="#">ABOUT ME</a></li>
+				<li><a href="#">CONTACT</a></li>
+			</ul>	
+
+			<div class="header-center">Deia's Bites</div>
+
+			<ul class="menu-right">
+				<li><a href="#">INSTAGRAM</a></li>
+				<li><a href="#">FACEBOOK</a></li>
+				<li><a href="#">YOUTUBE</a></li>
+				<li>
+					<div class="contact-icon">
+						<i class="fas fa-shopping-cart"></i>
+					</div>
+				</li>
+			</ul>	
+		</div>	
+	</div>
+	<div class="headPic"></div>
+	<div class="bodyText">
+		<p class="title">/BEST SELLER </p>
+		<p class="text">I'm a paragraph.Click here to add your our text and edit me</p>
+	</div> 
+	<div class="midPic">
+		<ul>
+			<li>
+				<div class="pic"></div>
+				<p class="guitarName">1959 LES PAUL STANDAR </p>
+				<p class="price">$10000</p>
+			</li>
+			<li>
+				<div class="pic2"></div>
+				<p class="guitarName">JEM 25TH ANNIVERSARY</p>
+				<p class="price">$7500</p>
+			</li>
+			<li>
+				<div class="pic3"></div>
+				<p class="guitarName">PRS CUSTOM 24</p>
+				<p class="price">$5000</p>
+			</li>
+		</ul>
+	</div> 	
+	<div class="buttons-coll">
+		<button class="custom-btn btn-10">Account</button>
+	</div>
+	<div class="containBotPic">
+		<div class="botPic">
+			<div class="botText">/FOLLOW ME FOR MORE GUITARS</div>
+			<div class="contain-6pic">
+				<ul>
+					<li>
+						<div class="pic11"></div>
+					</li>
+					<li>
+						<div class="pic22"></div>
+					</li>
+					<li>
+						<div class="pic33"></div>
+					</li>
+					<li>
+						<div class="pic44"></div>
+					</li>
+					<li>
+						<div class="pic55"></div>
+					</li>
+					<li>
+						<div class="pic66"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="expand" id="expand1">
+		<button onclick="anHienne()"><i class="fas fa-plus"></i></button>
+	</div>
+
+	<div class="service">
+		<ul>
+
+			<li class="service1">
+				<i class="fas fa-shopping-bag"></i>
+				<p class="tit">NEW PICKUP SERVICE</p>
+				<p>Get a branch</p>
+			</li>
+			<li class="service2">
+				<i class="fas fa-shipping-fast">
+				</i>
+				<p class="tit">FREE DELIVERY</p>
+				<p>Delivered so you drop</p>
+			</li>
+			<li class="service3">
+				<i class="fas fa-gift"></i>
+				<p class="tit">SPECIAL GIFT WRAPS</p>
+				<p>Send a sweet suprise</p>
+			</li>
+		</ul>
+	</div>
+	<div class="footer">
+		<ul>
+			<li class="infor">
+				<p class="title-infor">SHOP</p>
+				<ul class="list-infor">
+					<li><a href="#">About</a></li>
+					<li><a href="#">FAQ</a></li>
+					<li><a href="#">Shopping/Pick Up</a></li>
+					<li><a href="#">Store Policy</a></li>
+					<li><a href="#">Contact Me</a></li>
+				</ul>
+			</li>
+			<li class="infor">
+				<p class="title-infor">OPENING HOUR</p>
+				<p>Mon - Fri: 7am - 10pm</p>
+				<p>Saturday: 8am - 10pm</p>
+				<p>Sunday: 8am - 11pm</p>
+			</li>
+			<li class="infor">
+				<p class="title-infor">ADDRESS</p>
+				<p>500 Hung Vuong Street</p>
+				<p>San Francisco, CA 94158</p>
+				<p>Tel: 123-456-7890</p>
+			</li>
+			<li class="infor">
+				<p class="title-infor">GET ITEM</p>
+				<form>
+					<input class="mail" type="text" name="mail" placeholder="Email Address"><br>
+					<input class="subcribe" type="submit" value="SUBCRIBE NOW" >
+				</form>
+			</li>
+		</ul>
+		<div class="title-final">
+		<ul class="final">
+			<li>
+				<div>&copy;	2021 by Deia's Bites. Product created with Facebook.com
+				</div>
+			</li>
+			<li>
+				<ul class="icon">
+					<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	</div>
+	
+	<script type="text/javascript">
+		var anHien = '<div class="contain-6pic"><ul><li><div class="pic11"></div></li><li><div class="pic22"></div></li><li><div class="pic33"></div></li><li><div class="pic44"></div></li><li><div class="pic55"></div></li><li><div class="pic66"></div></li></ul></div><div class="expand" id="expand2"><button onclick="anHienne2()"><i class="fas fa-minus"></i></button></div>';
+		
+		var nut = '<div class="expand" id="expand1"><button onclick="anHienne()"><i class="fas fa-plus"></i></button></div>';
+
+		function anHienne(){
+			document.getElementById("expand1").innerHTML = anHien;
+		}
+
+		function anHienne2(){
+			document.getElementById("expand2").style.display = "none";
+			document.getElementById("expand1").innerHTML = nut;
+
+
+		}
+	</script>
+</body>
+</html>

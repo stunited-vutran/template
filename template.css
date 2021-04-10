@@ -1,0 +1,452 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-size: 15px;
+	color: black;
+	font-family: sans-serif;
+}
+
+#header {
+	width: 100%;
+	height: 90px;
+}
+
+#header .container {
+	width: 1020px;
+	margin: 0px auto;
+}
+
+#header .container ul.menu-left {
+	list-style: none;
+	float:left;
+	width: 340px;
+}
+
+#header .container ul.menu-left li {
+	width: 100px;
+}
+
+#header .container ul.menu-left li a {
+	text-decoration: none;
+	height: 90px;
+	display: block;
+	line-height: 90px;
+	color: #AAA;
+	text-align: center;
+}
+
+#header .container .header-center {
+	float: left;
+	width: 340px;
+	text-align: center;
+	height:90px;
+	line-height: 90px;
+}
+
+#header .container ul.menu-left {
+	display: flex;
+}
+
+
+#header .container div.header-center {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+#header .container ul.menu-right {
+	list-style: none;
+	display: flex;
+	width: 340px;
+}
+
+#header .container ul.menu-right li {
+	width: 100px;
+}
+
+#header .container ul.menu-right li a {
+	text-decoration: none;
+	height: 90px;
+	display: block;
+	line-height: 90px;
+	color: #AAA;
+	text-align: center;
+	padding-right: 20px;
+}
+
+#header .container ul.menu-right li .contact-icon {
+	text-decoration: none;
+	height: 90px;
+	display: block;
+	line-height: 90px;
+	color: #AAA;
+}
+
+.headPic {
+	width: 1080px;
+	height: 550px;
+	background: url("./picture/guitar.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+	margin:auto;
+}
+
+.bodyText {
+	height: 80px;
+	text-align: center;
+	margin: 40px;
+}
+
+.bodyText p.title {
+	font-size: 28px;
+	margin: 25px 0 20px 0;
+}
+
+.midPic ul {
+	display: flex;
+	justify-content: center;
+}
+.midPic li {
+	list-style: none;
+	float:left;
+	width: 290px;
+	text-align: center;
+	margin: 10px;
+
+}
+.midPic div.pic {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/gibson.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.midPic p.guitarName {
+	margin-top: 14px;
+	margin-bottom: 6px;
+	font-size: 18px;
+	font-family: unset;
+}
+
+.midPic p.price {
+	font-weight: bold;
+}
+
+.midPic div.pic2 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/ibanez.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.midPic div.pic3 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/prs.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.bodyText2 {
+	text-align: center;
+	margin: 20px;
+}
+
+/*BUTTON ACCOUNT*/
+.buttons-coll {
+	width: 90%;
+	margin: 20px auto;
+	text-align: center;
+}
+button {
+	margin: 20px;
+}
+.custom-btn {
+	padding: 10px 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 500;
+	background: transparent;
+	outline: none !important;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+}
+
+.btn-10 {
+	background: #f2f2f2;
+	border: 2px solid #000;
+	transition: all 0.3s ease;
+
+}
+.btn-10:before, .btn-10:after {
+	position: absolute;
+	content: ' ';
+	z-index: -1;
+	width: 580px;
+	top: 50%;
+	height: 2px;
+	background: #000;
+	transition: all 0.3s ease;
+}
+.btn-10:before {
+	left: -50%;
+}
+.btn-10:after {
+	right: -50%
+}
+.btn-10:hover {
+	background: #000;
+	color: #fff;
+}
+.btn-10:hover:before {
+	left: -10%;
+}
+.btn-10:hover:after {
+	right: -10%;
+}
+
+.containBotPic {
+	width: 100%;
+	height: 590px;
+}
+
+.botPic {
+	width: 1080px;
+	height: 250px;
+	background: url("./stage.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+	margin:auto;
+	position: relative;
+	padding-top: 70px;
+}
+
+.botText {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	color: white;
+	font-size: 28px;
+}
+
+.contain-6pic {
+	width: 900px;
+	height: 500px;
+	margin: 0px auto;
+}
+
+.contain-6pic li {
+	list-style: none;
+	float:left;
+	width: 290px;
+	text-align: center;
+	margin: 5px;
+
+}
+.contain-6pic div.pic11 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/beauty.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.contain-6pic div.pic22 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/fender.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.contain-6pic div.pic33 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/hollow.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.contain-6pic div.pic44 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/prsDo.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.contain-6pic div.pic55 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/syns.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.contain-6pic div.pic66 {
+	width: 290px;
+	height: 250px;
+	background: url("./picture/sg.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+}
+
+.expand {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.expand i {
+	font-size: 40px;
+	color: #BBB;
+}
+
+.service {
+	width: 960px;
+	height: 260px;
+	margin: 0px auto;
+	margin-top: 70px;
+}
+
+.service ul {
+	text-align: center;
+	list-style: none;
+}
+
+.service ul li {
+	list-style: none;
+	float:left;
+	width: 310px;
+	height: 200px;
+	margin: 5px;
+	 padding-top: 30px;
+   padding-bottom: 30px;
+}
+
+.service li.service2 {
+	border-right: black solid;
+	border-left: black solid;
+	border-width: thick; 
+}
+.service ul li i {
+	margin: 20px;
+	font-size: 50px;
+	color: black;
+}
+
+.service ul li p.tit {
+	font-size: 20px;
+	margin-bottom: 4px
+}
+
+.footer {
+	width: 1080px;
+	height: 310px;
+	background: url("./picture/stage.jpg") no-repeat center center;
+	background-size: cover;
+	background-position: center;
+	margin:auto;
+	padding-right: 80px;
+	padding-left: 80px;
+	position: relative;
+	z-index: 0;
+}
+.footer:after{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	bottom: 0px;
+	right: 0px;
+	content: "";
+	opacity: 8;
+	z-index: -1;
+	background: linear-gradient(to right, #222 0%, #111 100%);
+	opacity: 0.5; 
+
+}
+
+.footer ul li.infor {
+	float: left;
+	list-style: none;
+	width: 220px;
+	height: 230px;
+	margin: 5px;
+
+}
+
+.footer ul li p.title-infor {
+	margin-top: 40px;
+	margin-bottom: 25px;
+	font: 18px thick;
+	font-family: sans-serif;
+	color: white;
+
+}
+
+.footer ul li p  {
+	font-weight: bold;
+	margin-bottom: 12px;
+	color: white;
+
+}
+
+.footer ul.list-infor li {
+	list-style: none;
+	margin-bottom: 12px;
+		color: white;
+
+}
+.footer ul.list-infor li a {
+	font-weight: bold;
+	text-decoration: none;
+	margin-bottom: 10px;
+		color: white;
+
+}
+
+.footer ul li.infor input.subcribe {
+	  background-color: pink;
+
+}
+.footer ul li.infor input {
+	width: 220px;
+	height: 30px;
+	margin-bottom: 5px;
+}
+.title-final {
+	color: white;
+}
+.title-final ul.final {
+	clear:both;
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	align-items: center;
+}
+
+.title-final  ul.final li ul.icon {
+	list-style: none;
+	display: flex;
+}
+
+.title-final  ul.final ul.icon i {
+	font-size: 20px;
+	margin: 10px;
+	color: white;
+}
+
+.title-final ul.final li div {
+	color: white;
+}
+
+
+
+
+
+
+
